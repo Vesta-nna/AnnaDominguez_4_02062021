@@ -1030,6 +1030,12 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+/* Make button cliquable */
+    .social i {
+        width: 48px;
+        height: 48px;
+        margin: auto auto auto auto;
+    }
 }
 
 @media (max-width: 767px) {
