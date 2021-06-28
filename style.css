@@ -700,10 +700,20 @@ p {
     font-weight: 700;
 }
 
-.social {
+.socials {
     max-width: 400px;
     margin: auto auto auto auto;
 }
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social p {
+    color: rgba(255, 255, 255, 2)
+}
+
 
 h2 {
     font-size: 22px;
