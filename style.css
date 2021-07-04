@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("../img/texture-paper.webp");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -700,20 +700,10 @@ p {
     font-weight: 700;
 }
 
-.socials {
+.social {
     max-width: 400px;
     margin: auto auto auto auto;
 }
-
-.social {
-    display: flex;
-    flex-direction: column;
-}
-
-/* .social p {
-    color: rgba(255, 255, 255, 2)
-} */
-
 
 h2 {
     font-size: 22px;
@@ -817,19 +807,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("../img/dots-bg.webp");
+    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("../img/lines-h2-bg.webp");
+    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("../img/la-chouette-agence-banniere.webp");
+    background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
@@ -855,13 +845,13 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -880,8 +870,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left, 10em);
-        padding-right: constant(safe-area-inset-right, 10em);
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -891,8 +881,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left, 10em);
-        padding-right: constant(safe-area-inset-right, 10em);
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
